@@ -1,0 +1,49 @@
+1.display:flex:设置父容器的伸缩布局，那么每一个子元素默认成为伸缩项
+
+2.主轴和侧轴，默认情况下主轴为水平轴，通过flex-direction来设置主轴和侧轴方向
+    flex-direction:row:说明主轴方向为水平向右
+    flex-direction:row-reverse:说明主轴方向为水平向左
+    flex-direction：column:说明主轴方向为垂直向下
+    flex-direction：column-reverse:说明主轴方向为垂直向上
+
+3.justify-content:设置主轴方向中所有子元素排列方式
+    justify-content：flex-start:从主轴起始方向开始放置
+    justify-content：flex-end:从主结束方向开始放置
+    justify-content:center:从主轴居中位置开始旋转
+    justify-content:space-between:从主轴起始位置放置，左右两个对齐父容器的两边，其它元素平分多余的空间
+    justify-content：space-around:从主轴起始位置放置，所有元素平分多余的空间
+
+4.flex-wrap:设置当子元素的总占据空间大于父容器空间的时候，是否换行显示还是按默认的方式进行收缩
+    flex-wrap：nowrap:不换行，而是进行收缩
+    flex-wrap：wrap:如果超出空间大小，则进行换行显示
+    flex-wrap:wrap-reverse:按侧轴的反方向进行换行显示
+
+5.align-content:设置多行元素在侧轴方向上的排列方式(一定要添加了flex-wrap样式)
+    align-content：fext-start:
+    align-content:flex-end:
+    align-content:center:
+    align-content:space-between:
+    align-content:space-around:
+    align-content:stretch:默认值，如果元素没有设置宽或高，默认会进行拉伸
+
+6.align-items:设置多行元素或单选元素在侧轴方向上的排列方式，它并不要求子元素换行显示了
+    align-items-start:
+    align-items:flex-end:
+    align-items:center:
+    align-items:baseline:文本基线对齐，如果想看到效果，就为字符添加font-size--添加英文字符
+    align-items:stretch:默认值，如果元素没有设置宽或高，默认会进行拉伸
+
+7.align-self:可以设置单个元素在侧轴方向上的排列方式 
+    align-self-start:
+    align-self:flex-end:
+    align-self:center:
+    align-self:baseline:文本基线对齐，如果想看到效果，就为字符添加font-size--添加英文字符
+    align-self:stretch:默认值，如果元素没有设置宽或高，默认会进行拉伸
+
+8.flex-grow:设置扩展拉伸比例：默认值这0，说明元素默认情况下不会进行拉伸
+    公式：当前元素的flex-grow值 / 所有兄弟元素的Flex-frow值的和 * 多余空间
+9.flex-shrink:设置收缩比例：默认值为1，说明元素默认情况下会进行收缩
+    公式：当前元素的flex-shrink值 / 所有兄弟元素的flex-shrink值的和 * 不足的空间
+
+10：flex:设置当前元素占据剩余空间的比例值
+    公式：当前元素的flex值 / 所有兄弟元素的Flex值的和 * 父容器空间值

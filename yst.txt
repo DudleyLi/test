@@ -1,0 +1,11 @@
+jira地址：http://192.168.0.131:40000/secure
+账号：lidongli
+密码：lidongli
+
+原型地址：https://org.modao.cc/app/229e26c301f89e82a19e419cccc316905080130d?simulator_type=device&sticky#screen=sk7bqfnvww9re1
+
+邮箱网址：https://mail.21cn.net/
+邮箱账号：ldl@e-nutrition.com.cn
+首次登陆密码：Yst20200306
+
+git代码服务：http://dev.e-nutrition.com.cn:40002/scm/vues/vue-saas.git
